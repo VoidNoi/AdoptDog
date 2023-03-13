@@ -1,0 +1,198 @@
+/* #root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.bgImg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mainImageCont {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  z-index: 1;
+  /* filter: blur(6px);
+  scale: 1.1; */
+}
+
+.slideout {
+  animation: slideout 2s ease-in-out;
+}
+
+.slidein {
+  animation: slidein 2s ease-in-out;
+}
+
+@keyframes slideout {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.shade {
+  position: fixed;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.mainCont {
+  position: absolute;
+  color: white;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: -2px 2px 4px black;
+  text-align: center;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.mainText {
+  font-size: 25px;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 3;
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100vw - 10px);
+  border-bottom: 1px solid black;
+  /* box-shadow: -1px 1px 4px #00000091; */
+}
+.navbar > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.navLogo {
+  height: 40px;
+  margin: 15px 0 0 15px;
+}
+
+.navPages {
+  justify-content: center;
+}
+
+.navSocials {
+  justify-content: end;
+  align-items: center;
+}
+.navSocials > li > a {
+  display: flex;
+}
+
+.navPages > li {
+  padding: 0 20px;
+  font-size: 25px;
+}
+
+.pageLinkWhite {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.pageLinkWhite:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px white;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+.pageLinkWhite:hover:after {
+  transform: scaleX(1);
+}
+
+.pageLinkBlack {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.pageLinkBlack:after {
+  display: block;
+  content: '';
+  border-bottom: solid 2px black;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin: 0% 50%;
+}
+.pageLinkBlack:hover:after {
+  transform: scaleX(1);
+}
+
+.navSocials > li {
+  padding: 0 20px;
+}
+
+.space {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+section {
+  position: relative;
+  top: 87px;
+}
+
+.adopt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.dogPicCont {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 200px;
+  width: 200px;
+}
+
+.dogPicCont > h3 {
+}
+
+.dogPic {
+}
