@@ -3,14 +3,14 @@ const DogList = [
     id: 0,
     gender: 'Female',
     name: 'Bella',
-    breed: 'Hound afghan',
-    image: 'https://images.dog.ceo/breeds/hound-afghan/n02088094_1003.jpg',
+    breed: 'Chow',
+    image: 'https://images.dog.ceo/breeds/chow/n02112137_3032.jpg',
   },
   {
     id: 1,
     gender: 'Female',
     name: 'Luna',
-    breed: 'Hound ibizan',
+    breed: 'Ibizan Hound',
     image: 'https://images.dog.ceo/breeds/hound-ibizan/n02091244_2427.jpg',
   },
   {

@@ -13,9 +13,11 @@ const Adopt = () => {
     <section className='adopt'>
       {DogList.map((dog) => {
         return (
-          <div className='dogPicCont' key={dog.id}>
+          <div className='dogCont' key={dog.id}>
             <h3>{dog.name}</h3>
-            <img className='dogPic' src={dog.image} alt='' />
+            <div className='dogPicCont'>
+              <img className='dogPic' src={dog.image} alt='' />
+            </div>
           </div>
         );
       })}
