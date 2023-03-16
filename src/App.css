@@ -175,6 +175,12 @@ section {
 
 .adopt {
   display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.dogsCont {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -184,11 +190,12 @@ section {
   border: 1px solid black;
   border-radius: 5px;
   margin: 20px 0;
-  height: 300px;
   width: 440px;
   overflow: hidden;
   box-shadow: -3px 4px 5px black;
   transition: var(--main-transition);
+  cursor: pointer;
+  align-self: flex-start;
 }
 
 .dogCont:hover {
@@ -198,22 +205,84 @@ section {
   background-color: black;
 }
 
+.dogContShow {
+  height: 385px;
+}
+
 .dogPicCont {
   display: flex;
   justify-content: center;
   flex-direction: column;
   max-width: 100%;
-  max-height: 100%;
-  cursor: pointer;
   overflow: hidden;
 }
 
-.dogCont > h3 {
-  margin: 5px 0;
+.dogName {
+  margin: 0;
   text-align: center;
   font-size: 20px;
+  height: 0;
+  transition: var(--main-transition);
+}
+
+.dogNameShow {
+  height: 27px;
+  margin: 5px 0;
 }
 
 .dogPic {
+  height: 320px;
   object-fit: cover;
+}
+
+.dogInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 0;
+  transition: var(--main-transition);
+}
+
+.dogInfoShow {
+  margin: 2px 0 5px 0;
+  height: 20px;
+}
+
+.dogInfo > p {
+  margin: 0;
+}
+
+.adoptTextCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+  width: 97%;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.adoptText {
+  font-size: 20px;
+  width: 700px;
+  text-align: center;
+}
+
+.contactInfo {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: row;
+}
+.contactInfo > a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactInfo > a > svg {
+  font-size: 20px;
+  margin-right: 5px;
 }
