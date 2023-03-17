@@ -28,11 +28,11 @@ const Adopt = () => {
           email or by calling the number below
         </p>
         <div className='contactInfo'>
-          <a href='mailto:adoptdog@adoptdog.dog'>
+          <a href='mailto:adoptdog@adoptdog.dog' className='contacts'>
             <MdEmail />
             adoptdog@adoptdog.dog
           </a>
-          <a href='tel:777777777'>
+          <a href='tel:777777777' className='contacts'>
             <MdPhone />
             777777777
           </a>
@@ -40,21 +40,16 @@ const Adopt = () => {
       </div>
       <div className='dogsCont'>
         {dogsCopy.map((dog) => {
+          const { id, name, gender, breed, image, open } = dog;
           return (
-            <div
-              className='dogCont'
-              key={dog.id}
-              onClick={() => showInfo(dog.id)}
-            >
-              <h3 className={`dogName ${dog.open ? 'dogNameShow' : ''}`}>
-                {dog.name}
-              </h3>
+            <div className='dogCont' key={id} onClick={() => showInfo(id)}>
+              <h3 className={`dogName ${open ? 'dogNameShow' : ''}`}>{name}</h3>
               <div className='dogPicCont'>
-                <img className='dogPic' src={dog.image} alt='' />
+                <img className='dogPic' src={image} alt='' />
               </div>
-              <div className={`dogInfo ${dog.open ? 'dogInfoShow' : ''}`}>
-                <p>Gender: {dog.gender}</p>
-                <p>Breed: {dog.breed}</p>
+              <div className={`dogInfo ${open ? 'dogInfoShow' : ''}`}>
+                <p>Gender: {gender}</p>
+                <p>Breed: {breed}</p>
               </div>
             </div>
           );

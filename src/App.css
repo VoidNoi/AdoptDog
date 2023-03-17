@@ -127,6 +127,7 @@ body {
   display: inline-block;
   text-decoration: none;
   color: white;
+  transition: var(--main-transition);
 }
 
 .pageLinkWhite:after {
@@ -145,6 +146,7 @@ body {
   display: inline-block;
   text-decoration: none;
   color: black;
+  transition: var(--main-transition);
 }
 
 .pageLinkBlack:after {
@@ -257,7 +259,7 @@ section {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid black;
-  width: 97%;
+  width: 800px;
   margin: 0 auto;
   flex-direction: column;
 }
@@ -285,4 +287,65 @@ section {
 .contactInfo > a > svg {
   font-size: 20px;
   margin-right: 5px;
+}
+
+.contacts {
+  color: black;
+  transition: var(--main-transition);
+}
+.contacts:hover {
+  color: slateblue;
+}
+
+.navContactsWhite {
+  color: white;
+}
+
+.navContactsBlack {
+  color: black;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutTitle {
+  text-align: center;
+  font-size: 27px;
+  margin: 50px 0 20px 0;
+}
+
+.aboutDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.teamCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px 0 0 0;
+  flex-wrap: wrap;
+  margin: 50px 0 0 0;
+}
+
+.teammateImg {
+  border-radius: 100%;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  box-shadow: -1px 2px 3px black;
+}
+
+.teammateName {
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
 }
