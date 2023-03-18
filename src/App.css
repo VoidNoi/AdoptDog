@@ -23,8 +23,6 @@ body {
   flex-direction: row;
   overflow: hidden;
   z-index: 1;
-  /* filter: blur(6px);
-  scale: 1.1; */
 }
 
 .slideout {
@@ -91,7 +89,6 @@ body {
   justify-content: space-between;
   width: calc(100vw - 10px);
   border-bottom: 1px solid black;
-  /* box-shadow: -1px 1px 4px #00000091; */
 }
 .navbar > ul {
   list-style-type: none;
@@ -308,6 +305,10 @@ section {
 .about {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  position: relative;
+  height: calc(100vh - 88px);
+  overflow: hidden;
 }
 
 .aboutTitle {
@@ -321,7 +322,7 @@ section {
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  width: 80%;
+  width: 70%;
   font-size: 20px;
   text-align: center;
 }
@@ -332,7 +333,13 @@ section {
   justify-content: space-evenly;
   padding: 20px 0 0 0;
   flex-wrap: wrap;
-  margin: 50px 0 0 0;
+  margin: 50px 0 20px 0;
+  z-index: 1;
+  color: white;
+  text-shadow: -1px 1px 2px black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .teammateImg {
@@ -348,4 +355,37 @@ section {
   text-align: center;
   font-weight: bold;
   text-transform: capitalize;
+}
+
+.curve {
+  position: absolute;
+  height: 225px;
+  width: 100%;
+  bottom: 0;
+  background-color: slateblue;
+  z-index: 0;
+}
+
+.curve:before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: slateblue;
+  transform: translate(86%, -49%);
+  z-index: -1;
+}
+
+.curve:after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(-9%, -52%);
+  background-color: white;
+  z-index: -1;
 }

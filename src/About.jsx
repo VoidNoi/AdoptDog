@@ -1,16 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
 import Teammates from './Teammates';
 
 const About = () => {
   const setBarColor = useOutletContext();
-  const [teammates, setTeammates] = useState([]);
 
   useEffect(() => {
     setBarColor('Black');
   }, []);
 
-  console.log(teammates);
   return (
     <section className='about'>
       <h1 className='aboutTitle'>Who are we?</h1>
@@ -37,6 +35,7 @@ const About = () => {
           );
         })}
       </div>
+      <div className='curve'></div>
     </section>
   );
 };
