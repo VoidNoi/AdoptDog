@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
-import Teammates from './Teammates';
+import Teammates from '../Data/Teammates';
 
 const About = () => {
   const setBarColor = useOutletContext();
@@ -25,7 +25,7 @@ const About = () => {
         atque? Doloribus sit tenetur perspiciatis natus.
       </p>
       <div className='teamCont'>
-        {Teammates.map((teammate) => {
+        {Teammates.map((teammate, index) => {
           const { id, image, name } = teammate;
           return (
             <div key={id}>

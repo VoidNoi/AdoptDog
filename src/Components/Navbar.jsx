@@ -1,6 +1,6 @@
 import React from 'react';
-import logoWhite from './assets/logo-w.png';
-import logoBlack from './assets/logo.png';
+import logoWhite from '../assets/logo-w.png';
+import logoBlack from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
 

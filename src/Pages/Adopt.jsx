@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useOutletContext } from 'react-router-dom';
-import DogList from './DogList';
+import DogList from '../Data/DogList';
 import { MdEmail, MdPhone } from 'react-icons/md';
 
 const Adopt = () => {

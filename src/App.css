@@ -307,7 +307,7 @@ section {
   flex-direction: column;
   background-color: white;
   position: relative;
-  height: calc(100vh - 88px);
+  height: calc(100vh - 87px);
   overflow: hidden;
 }
 
@@ -315,6 +315,7 @@ section {
   text-align: center;
   font-size: 27px;
   margin: 50px 0 20px 0;
+  z-index: 1;
 }
 
 .aboutDescription {
@@ -322,9 +323,10 @@ section {
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-  width: 70%;
-  font-size: 20px;
+  width: 55%;
+  font-size: 22px;
   text-align: center;
+  z-index: 1;
 }
 
 .teamCont {
@@ -344,7 +346,6 @@ section {
 
 .teammateImg {
   border-radius: 100%;
-  background-color: white;
   height: 200px;
   width: 200px;
   object-fit: cover;
@@ -359,7 +360,7 @@ section {
 
 .curve {
   position: absolute;
-  height: 225px;
+  height: 360px;
   width: 100%;
   bottom: 0;
   background-color: slateblue;
@@ -388,4 +389,26 @@ section {
   transform: translate(-9%, -52%);
   background-color: white;
   z-index: -1;
+}
+
+.errorPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.errorBtn {
+  text-decoration: none;
+  color: white;
+  transition: var(--main-transition);
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.errorBtn:hover {
+  transform: scale(1.1);
 }

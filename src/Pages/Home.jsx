@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import ImageSlide from './ImageSlide';
+import ImageSlide from '../Components/ImageSlide';
 import { useOutletContext } from 'react-router-dom';
 
 const Home = () => {

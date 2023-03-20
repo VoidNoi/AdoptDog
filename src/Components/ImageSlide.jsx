@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
 
-import dog1 from './assets/dogpics/dog1.jpg';
-import dog2 from './assets/dogpics/dog2.jpg';
-import dog3 from './assets/dogpics/dog3.jpg';
-import dog4 from './assets/dogpics/dog4.jpg';
-import dog5 from './assets/dogpics/dog5.jpg';
-import dog6 from './assets/dogpics/dog6.jpg';
-import dog7 from './assets/dogpics/dog7.jpg';
+import dog1 from '../assets/dogpics/dog1.jpg';
+import dog2 from '../assets/dogpics/dog2.jpg';
+import dog3 from '../assets/dogpics/dog3.jpg';
+import dog4 from '../assets/dogpics/dog4.jpg';
+import dog5 from '../assets/dogpics/dog5.jpg';
+import dog6 from '../assets/dogpics/dog6.jpg';
+import dog7 from '../assets/dogpics/dog7.jpg';
 
 const ImageSlide = () => {
   const dogPics = [dog1, dog2, dog3, dog4, dog5, dog6, dog7];
