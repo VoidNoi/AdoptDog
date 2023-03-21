@@ -18,7 +18,7 @@ const Navbar = ({ barColor }) => {
       }
     >
       <div className='space'>
-        <Link to={'/'}>
+        <Link to={'/AdoptDog'}>
           <img
             className='navLogo'
             src={barColor == 'White' ? logoWhite : logoBlack}
@@ -28,12 +28,12 @@ const Navbar = ({ barColor }) => {
       </div>
       <ul className='navPages space'>
         <li>
-          <Link to={'/Adopt'} className={`pageLink${barColor}`}>
+          <Link to={'/AdoptDog/Adopt'} className={`pageLink${barColor}`}>
             Adopt
           </Link>
         </li>
         <li>
-          <Link to={'/About'} className={`pageLink${barColor}`}>
+          <Link to={'/AdoptDog/About'} className={`pageLink${barColor}`}>
             About us
           </Link>
         </li>

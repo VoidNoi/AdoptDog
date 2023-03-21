@@ -6,7 +6,7 @@ const Error = () => {
 
   return (
     <section className='errorPage'>
-      <Link className='errorBtn' to={'/'}>
+      <Link className='errorBtn' to={'/AdoptDog'}>
         Go back to home page
       </Link>
       <h1>Sorry, an unexpected error has occurred</h1>
