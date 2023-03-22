@@ -2,7 +2,7 @@
   "name": "adoptdog",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://VoidNoi.github.io/AdoptDog",
+  "homepage": "https://voidnoi.github.io/AdoptDog",
   "type": "module",
   "scripts": {
     "predeploy": "yarn run build",

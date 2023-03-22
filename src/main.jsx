@@ -12,17 +12,18 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     errorElement: <Error />,
+    // basename: process.env.PUBLIC_URL,
     children: [
       {
-        path: '/AdoptDog',
+        path: '/',
         element: <Home />,
       },
       {
-        path: '/AdoptDog/Adopt',
+        path: '/Adopt',
         element: <Adopt />,
       },
       {
-        path: '/AdoptDog/About',
+        path: '/About',
         element: <About />,
       },
     ],
